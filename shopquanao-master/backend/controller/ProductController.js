@@ -196,7 +196,7 @@ exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-// single Product details
+// single Product detail
 exports.getSingleProduct = catchAsyncErrors(async (req, res, next) => { 
   const product = await Product.findById(req.params.id);
   if (!product) {
