@@ -10,6 +10,7 @@ exports.Payment = catchAsyncErrors(async (req, res, next) => {
       company: "MERN",
     },
   });
+  //test
 
   res
     .status(200)
